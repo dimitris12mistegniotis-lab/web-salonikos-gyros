@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Σαλονικιός Γύρος | Παραδοσιακό Γυράδικο Θεσσαλονίκης</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-strip">
+        ΑΥΘΕΝΤΙΚΟΣ ΓΥΡΟΣ ΘΕΣΣΑΛΟΝΙΚΗΣ ΑΠΟ ΤΟ 1998 • ΚΑΤΟΥΝΗ 14, ΛΑΔΑΔΙΚΑ
+    </div>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <button class="icon-btn" id="drawerOpenBtn" aria-label="Μενού">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <div class="dropdown-wrapper">
+                <button class="brand-dropdown-btn" id="dropdownToggleBtn">
+                    <span>ΣΑΛΟΝΙΚΙΟΣ ΓΥΡΟΣ</span>
+                    <span class="caret">▾</span>
+                </button>
+                <div class="dropdown-menu" id="topDropdownMenu">
+                    <a href="#home" class="dropdown-item active" data-page="home">Αρχική Σελίδα</a>
+                    <a href="#menu" class="dropdown-item" data-page="menu">Το Μενού μας (Φαγητά &amp; Ποτά)</a>
+                    <a href="#location" class="dropdown-item" data-page="location">Η Ιστορία &amp; Τοποθεσία</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <button class="icon-btn" id="searchToggleBtn" aria-label="Αναζήτηση">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-bar-container" id="searchBarContainer">
+        <input type="text" id="menuSearchInput" placeholder="Αναζήτηση στο μενού (π.χ. γύρος, σουβλάκι, μπύρα)...">
+    </div>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="side-drawer" id="sideDrawer">
+        <div class="drawer-header">
+            <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Κλείσιμο">✕</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#home" class="drawer-link active" data-page="home">Αρχική</a>
+            <a href="#menu" class="drawer-link" data-page="menu">Το Μενού μας</a>
+            <a href="#location" class="drawer-link" data-page="location">Η Ιστορία &amp; Τοποθεσία</a>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="page-home" class="page-section active">
+            <div class="hero-banner">
+                <div class="hero-overlay">
+                    <h1>ΣΑΛΟΝΙΚΙΟΣ ΓΥΡΟΣ</h1>
+                    <p class="hero-subtitle-en">Authentic Thessaloniki Gyro &amp; Grill House</p>
+                    <p class="hero-subtitle-gr">Η αυθεντική γεύση της Θεσσαλονίκης σε κάθε μπουκιά, στην καρδιά από τα Λαδάδικα</p>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="featured-card">
+                    <img src="images/featured-gyro.jpg" alt="Παραδοσιακός Γύρος Θεσσαλονίκης" class="featured-img">
+                </div>
+
+                <h2 class="section-heading">Παραδοσιακή Τέχνη στο Ψήσιμο &amp; Αγνές Πρώτες Ύλες</h2>
+
+                <p class="justified-text">
+                    Καλωσορίσατε στον «Σαλονικιό Γύρο», το αγαπημένο στέκι της Θεσσαλονίκης στην ιστορική συνοικία στα Λαδάδικα. Από το 1998, ετοιμάζουμε καθημερινά τον πιο ζουμερό, χειροποίητο γύρο χοιρινό και κοτόπουλο, μαριναρισμένο με μυστικά μπαχαρικά και εκλεκτά μυρωδικά της Μακεδονίας. Κάθε σούβλα στήνεται το πρωί στο κατάστημά μας από 100% φρέσκα ελληνικά κρέατα και ψήνεται αργά μέχρι να αποκτήσει την τέλεια τραγανή κρούστα.
+                </p>
+
+                <p class="justified-text">
+                    Στη Θεσσαλονίκη το σάντουιτς είναι ιεροτελεστία. Οι αφράτες, χορταστικές μας πίτες ψήνονται στα κάρβουνα την ώρα της παραγγελίας σας και γεμίζουν γενναιόδωρα με φρεσκοκομμένο γύρο, τραγανές τηγανητές πατάτες Νάξου και τις φημισμένες χειροποίητες αλοιφές μας — από παραδοσιακό τζατζίκι και τυροκαυτερή μέχρι αυθεντική σως μουστάρδας και πάπρικας.
+                </p>
+
+                <hr class="section-divider">
+
+                <h3 class="sub-heading">Γιατί Ξεχωρίζει ο Γύρος μας:</h3>
+                <ul class="goals-list">
+                    <li>100% εκλεκτά ελληνικά κρέατα ημέρας από πιστοποιημένες φάρμες της Βόρειας Ελλάδας.</li>
+                    <li>Αυθεντική Σαλονικιώτικη αφράτη πίτα, ψημένη στη σχάρα με ελαιόλαδο και ρίγανη.</li>
+                    <li>Χειροποίητες αλοιφές και φρέσκες πατάτες που κόβονται και τηγανίζονται καθημερινά.</li>
+                    <li>Ζεστή φιλοξενία στα Λαδάδικα (Κατούνη 14) και γρήγορη εξυπηρέτηση για πακέτο ή τραπέζι.</li>
+                </ul>
+
+                <div class="photo-gallery">
+                    <div class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Σαλονικιώτικο Σάντουιτς">
+                        <span>Πίτα Γύρος Σαλονικιώτικη</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Μερίδα Γύρος">
+                        <span>Χορταστικές Μερίδες</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Σουβλάκι & Σουτζουκάκι">
+                        <span>Σουβλάκια &amp; Σουτζουκάκια Σχάρας</span>
+                    </div>
+                </div>
+
+                <div class="cta-center">
+                    <button class="primary-btn" data-goto="menu">Δείτε Όλο το Μενού μας</button>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="contact-callout">
+                    <h3>Πεινάσατε ή Έχετε Ερωτήσεις;</h3>
+                    <p>Καλέστε μας για κράτηση ή παραγγελία στο <strong>2310 555 890</strong> ή στείλτε μας email στο <a href="mailto:info@salonikiosgyros.gr">info@salonikiosgyros.gr</a></p>
+                </div>
+
+                <div class="badges-section">
+                    <div class="main-badge">
+                        <span class="badge-title">ΣΑΛΟΝΙΚΙΟΣ ΓΥΡΟΣ</span>
+                        <span class="badge-sub">AUTHENTIC GRILL HOUSE • EST. 1998</span>
+                    </div>
+                    <div class="two-col-badges">
+                        <div class="partner-box">Ένωση Εστιατόρων Θεσσαλονίκης</div>
+                        <div class="partner-box">Πιστοποίηση Ποιότητας &amp; Υγιεινής HACCP</div>
+                    </div>
+                    <p class="co-funding-text">
+                        Υπερήφανος υποστηρικτής των τοπικών παραγωγών της Κεντρικής Μακεδονίας. Όλα μας τα προϊόντα παρασκευάζονται καθημερινά στο εργαστήριό μας στη Θεσσαλονίκη.
+                    </p>
+                    <div class="three-badges-banner">
+                        <div class="mini-emblem">ΕΛΛΗΝΙΚΑ ΚΡΕΑΤΑ</div>
+                        <div class="mini-emblem">ΠΑΡΑΔΟΣΗ ΘΕΣΣΑΛΟΝΙΚΗΣ</div>
+                        <div class="mini-emblem">ΛΑΔΑΔΙΚΑ 1998</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-menu" class="page-section">
+            <div class="hero-banner small-hero">
+                <div class="hero-overlay">
+                    <h1>ΤΟ ΜΕΝΟΥ ΜΑΣ</h1>
+                    <p class="hero-subtitle-en">Freshly Grilled Gyro, Pitas, Platters &amp; Drinks</p>
+                    <p class="hero-subtitle-gr">Όλα μας τα είδη ψήνονται την ώρα της παραγγελίας σας</p>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <h2 class="section-heading">Πίτες &amp; Σάντουιτς Θεσσαλονίκης</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="images/menu-pita-pork.jpg" alt="Πίτα Γύρος Χοιρινός">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Πίτα Γύρος Χοιρινός</h4>
+                                <span class="price">4,20 €</span>
+                            </div>
+                            <p>Χειροποίητος γύρος χοιρινός, ντομάτα, κρεμμύδι, πατάτες και αλοιφή της επιλογής σας.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/menu-pita-chicken.jpg" alt="Πίτα Γύρος Κοτόπουλο">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Πίτα Γύρος Κοτόπουλο</h4>
+                                <span class="price">4,20 €</span>
+                            </div>
+                            <p>Ζουμερός γύρος μπούτι κοτόπουλο, μαρούλι, ντομάτα, πατάτες και σως μουστάρδας.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/menu-soutzoukaki.jpg" alt="Πίτα Σουτζουκάκι">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Πίτα Σουτζουκάκι Πολίτικο</h4>
+                                <span class="price">4,00 €</span>
+                            </div>
+                            <p>Δύο χειροποίητα σουτζουκάκια στα κάρβουνα με μπούκοβο, ντομάτα, κρεμμύδι και τζατζίκι.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <h2 class="section-heading">Χορταστικές Μερίδες</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="images/menu-merida-pork.jpg" alt="Μερίδα Γύρος Χοιρινός">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Μερίδα Γύρος Χοιρινός</h4>
+                                <span class="price">9,50 €</span>
+                            </div>
+                            <p>Συνοδεύεται από φρέσκες πατάτες, 2 κομμένες πίτες, ντομάτα, κρεμμύδι και τζατζίκι.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/menu-merida-chicken.jpg" alt="Μερίδα Γύρος Κοτόπουλο">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Μερίδα Γύρος Κοτόπουλο</h4>
+                                <span class="price">9,50 €</span>
+                            </div>
+                            <p>Συνοδεύεται από φρέσκες πατάτες, 2 πίτες, δροσερή σαλάτα και σως μουστάρδας.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <h2 class="section-heading">Σαλάτες, Αλοιφές &amp; Ποτά</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="images/menu-greek-salad.jpg" alt="Χωριάτικη Σαλάτα">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Παραδοσιακή Χωριάτικη</h4>
+                                <span class="price">6,00 €</span>
+                            </div>
+                            <p>Ντομάτα, αγγούρι, πιπεριά, ελιές Χαλκιδικής, βαρελίσια φέτα και έξτρα παρθένο ελαιόλαδο.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/menu-tzatziki.jpg" alt="Χειροποίητες Αλοιφές">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Τζατζίκι / Τυροκαυτερή / Ρώσικη</h4>
+                                <span class="price">3,20 €</span>
+                            </div>
+                            <p>Παραδοσιακές αλοιφές Θεσσαλονίκης φτιαγμένες καθημερινά στο κατάστημά μας.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-card">
+                        <img src="images/menu-drinks.jpg" alt="Ποτά & Αναψυκτικά">
+                        <div class="menu-card-body">
+                            <div class="menu-title-row">
+                                <h4>Μπύρες, Ρετσίνα &amp; Αναψυκτικά</h4>
+                                <span class="price">από 1,80 €</span>
+                            </div>
+                            <p>Αναψυκτικά (1,80 €), Παγωμένη Μπύρα 500ml (3,50 €), Παραδοσιακή Ρετσίνα Θεσσαλονίκης 500ml (4,00 €).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-location" class="page-section">
+            <div class="hero-banner small-hero">
+                <div class="hero-overlay">
+                    <h1>Η ΙΣΤΟΡΙΑ &amp; Η ΤΟΠΟΘΕΣΙΑ ΜΑΣ</h1>
+                    <p class="hero-subtitle-en">Visit Us in the Heart of Ladadika, Thessaloniki</p>
+                    <p class="hero-subtitle-gr">Κατούνη 14, Λαδάδικα • Θεσσαλονίκη</p>
+                </div>
+            </div>
+
+            <div class="content-container">
+                <div class="featured-card">
+                    <img src="images/shop-location.jpg" alt="Τοποθεσία στα Λαδάδικα Θεσσαλονίκης" class="featured-img">
+                </div>
+
+                <h2 class="section-heading">Από το 1998 στην Καρδιά της Θεσσαλονίκης</h2>
+                <p class="justified-text">
+                    Η ιστορία του «Σαλονικιού Γύρου» ξεκίνησε το 1998 στον πεζόδρομο της οδού Κατούνη στα ιστορικά Λαδάδικα. Με μεράκι για το καλό κρέας και σεβασμό στη γαστρονομική παράδοση της Θεσσαλονίκης, δημιουργήσαμε έναν φιλόξενο χώρο όπου ντόπιοι, φοιτητές και επισκέπτες απολαμβάνουν αυθεντικό χειροποίητο γύρο.
+                </p>
+
+                <hr class="section-divider">
+
+                <div class="info-columns">
+                    <div class="info-box">
+                        <h3>Διεύθυνση</h3>
+                        <p>Κατούνη 14, Λαδάδικα</p>
+                        <p>Τ.Κ. 546 25, Θεσσαλονίκη</p>
+                        <p>5 λεπτά με τα πόδια από την Πλατεία Αριστοτέλους και το Λιμάνι.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Ωράριο Λειτουργίας</h3>
+                        <p>Δευτέρα – Πέμπτη: 12:00 – 01:00</p>
+                        <p>Παρασκευή – Σάββατο: 12:00 – 03:00</p>
+                        <p>Κυριακή: 12:00 – 00:00</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Τηλέφωνα Επικοινωνίας</h3>
+                        <p>Τηλ. Παραγγελιών: 2310 555 890</p>
+                        <p>Τηλ. Κρατήσεων: 2310 555 891</p>
+                        <p>Email: info@salonikiosgyros.gr</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p><strong>ΣΑΛΟΝΙΚΙΟΣ ΓΥΡΟΣ</strong> — Παραδοσιακό Γυράδικο Θεσσαλονίκης</p>
+                <p>Κατούνη 14, Λαδάδικα, 546 25 Θεσσαλονίκη</p>
+                <p>Email: <a href="mailto:info@salonikiosgyros.gr">info@salonikiosgyros.gr</a> | Ιστοσελίδα: <a href="#home">www.salonikiosgyros.gr</a></p>
+                <p>Τηλ: (+30) 2310 555 890, (+30) 2310 555 891</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">Facebook</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">Instagram</a>
+                <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">TikTok</a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="social-link" aria-label="Google Maps">Google Maps</a>
+            </div>
+
+            <p class="copyright">© 2026 Σαλονικιός Γύρος Θεσσαλονίκη. Με επιφύλαξη παντός δικαιώματος.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
